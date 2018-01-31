@@ -1,0 +1,9 @@
+{   
+    "provider":{
+        "p2p":1,
+        "taxicode" :1,
+        "mozio":1
+    },
+    "timeout":30000
+
+}
