@@ -16,7 +16,6 @@ module.exports=function AsyncCall(request,FullData){
     //console.log("From Aync: " +request.id)
     var stack = [];
     var retval;
-    var test;
     
     if(settings.provider.mozio===1 && request.Mozio!="-1"){
       // Mozio api
