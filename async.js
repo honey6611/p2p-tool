@@ -4,7 +4,7 @@ var async = require("async");
 var conn = require("./config/databaseConnection");
 var TaxiCode  =  require("./taxicode/index");
 var p2papi  =  require("./p2papi/index");
-var Mozio  =  require("./mozio/index");
+var Mozio  =  require("./mozio/index"); 
 //const settings =  require('./config/settings')
 
 module.exports=function AsyncCall(request,FullData){
@@ -16,6 +16,7 @@ module.exports=function AsyncCall(request,FullData){
     //console.log("From Aync: " +request.id)
     var stack = [];
     var retval;
+    var test;
     
     if(settings.provider.mozio===1 && request.Mozio!="-1"){
       // Mozio api
